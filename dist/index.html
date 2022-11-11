@@ -1,30 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <nav>
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Item de ejemplo</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
-  </body>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Space+Grotesk:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="h1">FORMULARIO</h1>
+  </header>
+  <main class="main">
+    <div class="main__first-column">
+      <div class="form__field">
+        <label class="form__label" for="">Text</label>
+        <input class="form__input" type="text" id="text" name="text">
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="">Nombre</label>
+        <input class="form__input" type="text" id="name" name="name">
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="">Email</label>
+        <input class="form__input" type="email" id="email" name="email">
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="">Nombre</label>
+        <input class="form__input" type="text" id="name" name="name">
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="">Required</label>
+        <input class="form__input" type="text" id="required" name="required" required>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="">Required</label>
+        <input class="form__input" type="text" id="disabled" name="disabled" disabled>
+      </div>
+      <div class="form__field">
+        <textarea name="textarea" id="textarea"></textarea>
+      </div>
+    </div>
+    <div class="main__second-column">
+      <div class="form__field">
+        <legend class="legend">Select Simple</legend>
+        <select name="select-simple" id="select-simple">
+          <option class="simple__option" value="simple__option-1">Option 1</option>
+          <option class="simple__option" value="simple__option-2">Option 2</option>
+          <option class="simple__option" value="simple__option-3">Option 3</option>
+        </select>
+      </div>
+      <div class="form__field">
+        <legend class="legend">Select Multiple</legend>
+        <select name="select-multiple" id="select-multiple" multiple>
+          <option class="multiple__option" value="multiple__option-1">Option 1</option>
+          <option class="multiple__option" value="multiple__option-2">Option 2</option>
+          <option class="multiple__option" value="multiple__option-3">Option 3</option>
+          <option class="multiple__option" value="multiple__option-4">Option 4</option>
+          <option class="multiple__option" value="multiple__option-5">Option 5</option>
+        </select>
+      </div>
+      <div class="form__field">
+        <legend class="legend">Radio Group Label</legend>
+        <div class="form__item">
+          <label class="form__option" for="radio__option-1">Option 1</label>
+          <input class="form__input" type="radio" id="radio__option-1" name="options">
+        </div>
+        <div class="form__item">
+          <label class="form__option" for="radio__option-2">Option 2</label>
+          <input class="form__input" type="radio" id="radio__option-2" name="options">
+        </div>
+        <div class="form__item">
+          <label class="form__option" for="radio__option-3">Option 3</label>
+          <input class="form__input" type="radio" id="radio__option-3" name="options">
+        </div>
+        <div class="form__item">
+          <label class="form__option" for="radio__option-4">Option 4</label>
+          <input class="form__input" type="radio" id="radio__option-4" name="options">
+        </div>
+      </div>
+    </div>
+    <div class="main__third-column">
+      <div class="form__field form__field--custom">
+        <legend class="legend">Radio Group Custom</legend>
+        <div class="form__container">
+          <div class="form__item">
+            <input class="form__input form__input--custom" type="radio" id="radio-custom__option-1" name="options">
+            <label class="form__option form__option--custom" for="radio-custom__option-1">Option 1</label>
+          </div>
+          <div class="form__item">
+            <input class="form__input form__input--custom" type="radio" id="radio-custom__option-2" name="options">
+            <label class="form__option form__option--custom" for="radio-custom__option-2">Option 2</label>
+          </div>
+          <div class="form__item">
+            <input class="form__input form__input--custom" type="radio" id="radio-custom__option-3" name="options">
+            <label class="form__option form__option--custom" for="radio-custom__option-3">Option 3</label>
+          </div>
+          <div class="form__item">
+            <input class="form__input form__input--custom" type="radio" id="radio-custom__option-4" name="options">
+            <label class="form__option form__option--custom" for="radio-custom__option-4">Option 4</label>
+          </div>
+        </div>
+      </div>
+      <div class="form__field form__field--checkbox">
+        <legend class="legend">Checkbox Group Label</legend>
+        <div class="form__container">
+          <div class="form__item form__item--checkbox">
+            <input class="form__input form__input--checkbox" type="checkbox" id="checkbox__option-1" name="options">
+            <label class="form__option form__option--checkbox" for="checkbox__option-1">Option 1</label>
+          </div>
+          <div class="form__item form__item--checkbox">
+            <input class="form__input form__input--checkbox" type="checkbox" id="checkbox__option-2" name="options">
+            <label class="form__option form__option--checkbox" for="checkbox__option-2">Option 2</label>
+          </div>
+          <div class="form__item form__item--checkbox">
+            <input class="form__input form__input--checkbox" type="checkbox" id="checkbox__option-3" name="options">
+            <label class="form__option form__option--checkbox" for="checkbox__option-3">Option 3</label>
+          </div>
+          <div class="form__item form__item--checkbox">
+            <input class="form__input form__input--checkbox" type="checkbox" id="checkbox__option-4" name="options">
+            <label class="form__option form__option--checkbox" for="checkbox__option-4">Option 4</label>
+          </div>
+        </div>
+      </div>
+      <div class="form__field form__field--checkbox-custom">
+        <legend class="legend">Checkbox Group Label</legend>
+        <div class="form__container">
+          <div class="form__item form__item--checkbox-custom">
+            <input class="form__input form__input--checkbox-custom" type="checkbox" id="checkbox-custom__option-1"
+              name="options">
+            <label class="form__option form__option--checkbox-custom" for="checkbox-custom__option-1">Option 1</label>
+          </div>
+          <div class="form__item form__item--checkbox-custom">
+            <input class="form__input form__input--checkbox-custom" type="checkbox" id="checkbox-custom__option-2"
+              name="options">
+            <label class="form__option form__option--checkbox-custom" for="checkbox-custom__option-2">Option 2</label>
+          </div>
+          <div class="form__item form__item--checkbox-custom">
+            <input class="form__input form__input--checkbox-custom" type="checkbox" id="checkbox-custom__option-3"
+              name="options">
+            <label class="form__option form__option--checkbox-custom" for="checkbox-custom__option-3">Option 3</label>
+          </div>
+          <div class="form__item form__item--checkbox-custom">
+            <input class="form__input form__input--checkbox-custom" type="checkbox" id="checkbox-custom__option-4"
+              name="checkbox-custom">
+            <label class="form__option form__option--checkbox-custom" for="checkbox-custom__option-4">Option 4</label>
+          </div>
+        </div>
+      </div>
+      <div class="form__field form__field-toggle">
+        <div class="form__item form__item--toggle">
+          <legend class="legend">Toggle Label</legend>
+          <input class="forn__input form__input--toggle" type="checkbox" id="toggle">
+          <label class="forn__option form__option--toggle" for="toggle"></label>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"></footer>
+</body>
+
 </html>

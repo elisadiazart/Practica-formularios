@@ -360,4 +360,134 @@ a {
   color: inherit;
 }
 
+.main {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lavender;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  margin-bottom: 2.2rem;
+}
+
+.form__label,
+.legend {
+  margin-bottom: 1rem;
+}
+
+.form__item {
+  margin-bottom: 0.5rem;
+}
+
+.legend,
+.form__label {
+  font-weight: 600;
+}
+
+.multiple__option:checked {
+  background-color: rgb(250, 221, 230);
+}
+
+.form__input--custom {
+  display: none;
+}
+
+.form__option--custom {
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: white;
+}
+
+.form__input--custom:checked + .form__option--custom {
+  border: 2px solid black;
+  background-color: rgb(250, 221, 230);
+}
+
+.form__container {
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+.form__item--checkbox {
+  margin-right: 2rem;
+}
+
+.form__input--checkbox-custom {
+  display: none;
+}
+
+.form__option--checkbox-custom {
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  background-color: white;
+  padding: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.form__input--checkbox-custom:checked + .form__option--checkbox-custom {
+  border: 2px solid black;
+  background-color: rgb(250, 221, 230);
+}
+
+.form__input--toggle {
+  display: none;
+}
+
+.form__option--toggle {
+  display: block;
+  width: 60px;
+  height: 35px;
+  border-radius: 60px;
+  background-color: white;
+  box-shadow: inset 1px 1px 4px rgba(42, 39, 39, 0.2);
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.form__input--toggle:checked + .form__option--toggle {
+  background-color: rgb(249, 172, 196);
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.form__option--toggle::after {
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  box-shadow: 1px 1px 4px rgba(22, 19, 19, 0.5);
+}
+
+.form__input--toggle:checked + .form__option--toggle::after {
+  transform: translateX(80%);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+.h1 {
+  margin: 0;
+  color: white;
+  font-size: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: black;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+}
+
 /* ESTILOS DEL FOOTER */
